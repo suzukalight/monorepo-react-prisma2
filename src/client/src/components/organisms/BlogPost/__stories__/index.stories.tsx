@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withInfo } from '@storybook/addon-info';
 
 import { Post } from '../../../../types/data';
 
@@ -23,4 +24,6 @@ const post: Post = {
 テスト2a`,
 };
 
-storiesOf('organisms/BlogPost', module).add('BlogPost', () => <BlogPost post={post} />);
+storiesOf('organisms/BlogPost', module)
+  .addDecorator(withInfo({ inline: true }))
+  .add('BlogPost', () => <BlogPost post={post} />);
