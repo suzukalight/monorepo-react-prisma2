@@ -1,0 +1,19 @@
+{
+  "name": "monorepo-react-prisma2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "suzukalight <mail@mkubara.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "src/*"
+    ],
+    "nohoist": [
+      "**/react-scripts",
+      "**/react-scripts/**",
+      "**/@generated",
+      "**/@generated/**"
+    ]
+  }
+}
