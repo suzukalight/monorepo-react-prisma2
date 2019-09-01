@@ -1,6 +1,8 @@
 import { configure, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 
+import 'semantic-ui-css/semantic.min.css';
+
 addParameters({
   options: {
     theme: create({
