@@ -17,6 +17,7 @@
     ]
   },
   "scripts": {
-    "cl:start": "yarn workspace client start"
+    "cl:start": "yarn workspace client start",
+    "sr:start": "yarn workspace server start"
   }
 }
