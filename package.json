@@ -22,8 +22,9 @@
     "lint": "yarn cl:lint && yarn sr:lint",
     "cl:lint": "eslint --fix --ext .jsx,.js,.tsx,.ts ./src/client/src",
     "sr:lint": "eslint --fix --ext .jsx,.js,.tsx,.ts ./src/server/src",
-    "storybook": "yarn workspace client start-storybook",
-    "test": "NODE_ENV=test jest"
+    "storybook": "yarn workspace client storybook",
+    "test": "NODE_ENV=test jest",
+    "storyshots": "yarn workspace client storyshots"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

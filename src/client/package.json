@@ -19,8 +19,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook",
+    "test": "NODE_ENV=test jest",
+    "storyshots": "NODE_ENV=test jest --config ./jest.config.storyshots.js"
   },
   "eslintConfig": {
     "extends": "react-app"
