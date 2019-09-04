@@ -2,6 +2,6 @@ import initStoryshots, { multiSnapshotWithOptions } from '@storybook/addon-story
 import path from 'path';
 
 initStoryshots({
-  configPath: path.resolve('./src/client/.storybook/config.js'),
+  configPath: path.resolve(__dirname, '../../.storybook/config.js'),
   test: multiSnapshotWithOptions({}),
 });
